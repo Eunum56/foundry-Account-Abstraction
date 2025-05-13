@@ -2,8 +2,8 @@
 pragma solidity ^0.8.24;
 
 import {Script} from "forge-std/Script.sol";
-import {EthAA} from "src/ethereum/EthAA.sol";
-import {HelperConfig} from "script/HelperConfig.s.sol";
+import {EthAA} from "../src/Ethereum/EthAA.sol";
+import {HelperConfig} from "./HelperConfig.s.sol";
 
 contract DeployEthAA is Script {
     function run() public {
