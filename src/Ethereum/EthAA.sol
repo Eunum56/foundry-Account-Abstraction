@@ -104,7 +104,7 @@ contract EthAA is IAccount, Ownable {
     function _payPreFund(uint256 missingAccountFunds) internal {
         if (missingAccountFunds != 0) {
             (bool success,) = payable(msg.sender).call{value: missingAccountFunds, gas: type(uint256).max}("");
-            require(success);
+            (success);
         }
     }
 
